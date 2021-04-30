@@ -1,0 +1,36 @@
+service: team-bronty-sls-lambda
+plugins:
+  - serverless-python-requirements
+  - serverless-dotenv-plugin
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  region: eu-west-1
+  role: arn:aws:iam::534900169478:role/bronty-lambda-role
+  vpc:
+    securityGroupIds:
+      - sg-00d713bdedcadb4bc
+    subnetIds:
+      - subnet-093ac2839ae3deb68
+
+functions:
+  hello:
+    handler: handler.execute
+    events: 
+      - s3:
+          bucket: team-bronty-bucket
+          event: s3:ObjectCreated:*
+          rules:
+            - prefix: incoming/
+            - suffix: .csv
+    
+package:
+  exclude:
+    - .venv/**
+    - .vscode/**
+    - node_modules/**
+    - .env
+    - .devcontainer/**
+    - data/**

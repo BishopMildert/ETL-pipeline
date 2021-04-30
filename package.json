@@ -1,0 +1,30 @@
+{
+  "name": "team-bronty-sls-lambda",
+  "description": "**For Code**\r 1. The code can carry out it's intended functionality\r 2. It has been thoroughly tested\r 3. Integration has been performed so it gets the information required to work",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "aws": "0.0.3-2",
+    "serverless": "^2.30.0",
+    "serverless-dotenv-plugin": "^3.8.1",
+    "serverless-python-requirements": "^5.1.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iw-de-man-2/team-bronty-is-best.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iw-de-man-2/team-bronty-is-best/issues"
+  },
+  "homepage": "https://github.com/iw-de-man-2/team-bronty-is-best#readme"
+}
