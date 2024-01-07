@@ -1,5 +1,6 @@
 # ETL Refactoring
-This project is slowly being refactored.
+This project is slowly being refactored for learning purposes.
+**FOR REFERENCE ONLY**
 
 ### Definition of Done
 **For Code**
