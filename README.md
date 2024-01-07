@@ -1,5 +1,5 @@
 # ETL Refactoring
-This project is to be updated soon.
+This project is slowly being refactored.
 
 ### Definition of Done
 **For Code**
